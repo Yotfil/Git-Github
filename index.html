@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1>Comandos git</h1>
+
+  <h3>Inicializando repositorio por primera vez</h3>
+  <p>Si es la primera vez que vas a crear un repositorio deberás seguir estos 6 pasos en el orden indicado. <i>Debes asegurarte de estar ubicado en el    <b>Git Bash</b>  sobre tu carpeta que quieres trabajar. <b>NO QUERRAS INCIALIZAR UN REPOSITORIO EN LA RAIZ DE TU COMPUTADOR</b> </i> </p>
+
+  <ol>
+    <li>
+      <p>
+        <b>git init</b> <br> Este comando inicializará tu repositorio de manera local
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>git add .</b> <br> Con este comando prepararás tus archivos para subir a tu repositorio local
+        <i>Nota: recuerda que hay una variación de este comando que es especificando el nombre/nombres de los archivos que quieres subir. <br>
+        <b>ej: <br> git add index.html</b>
+        </i>
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>git commit -m "first commit"</b> <br> Este comando subirá a tu respositorio local <i>(En tu computador)</i> los archivos que alistaste en el paso anterior. <b>Recuerda que en las comillas irá un comentario relacionado con el cambio que se sube</b>
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>git branch -M main</b> <br> Este paso solo será necesario si usas <b>Github</b> y lo que hace es cambiar el nombre de la rama de <b>master</b> a <b>main</b>
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>git remote add origin https://github.com/user/respositorio.git</b> <br> En este punto ya hemos acabado nuestro proceso de forma local <i>(En nuestro computador)</i> y pasaremos a conectar nuestro repositorio con la nube. <br>
+        <b>Nota: recuerda que la URL (https://github.com/user/respositorio.git) debe ser la tuya propia que te da el Github</b>
+      </p>
+    </li>
+    <li>
+      <p>
+        <b>git push -u origin main</b> <br> Finalmente este paso hará que nuestros archivos locales <i> (en nuestro computador) </i> sean empujados hacia la nube, que en este caso es <i>(Github)</i>
+      </p>
+    </li>
+  </ol>
+  <h4></h4>
+  <img src="./src/img/Screenshot.png" alt="">
+</body>
+</html>
